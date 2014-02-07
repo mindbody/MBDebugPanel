@@ -1,0 +1,21 @@
+PODS:
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - MBDebugPanel (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi/XCTest
+  - MBDebugPanel (from `./MBDebugPanel.podspec`)
+
+EXTERNAL SOURCES:
+  MBDebugPanel:
+    :path: ./MBDebugPanel.podspec
+
+SPEC CHECKSUMS:
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  MBDebugPanel: 6b538b2b35c40905a941bf1b8d02f1239bc6ebd1
+
+COCOAPODS: 0.29.0
