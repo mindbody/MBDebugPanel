@@ -1,3 +1,0 @@
-workspace "../MBDebugPanel"
-xcodeproj "MBDebugPanelDemo"
-pod "MBDebugPanel", :path => "../MBDebugPanel.podspec"
