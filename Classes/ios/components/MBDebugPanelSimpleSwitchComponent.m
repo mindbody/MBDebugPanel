@@ -47,14 +47,21 @@
 @interface MBDebugPanelSimpleSwitchComponent()
 @property (nonatomic, copy, readwrite)       NSString *title;
 @property (nonatomic, copy, readwrite) void(^onSwitchChanged)(BOOL newValue);
+
+// We can't determine this value from the state of a UISwitch when rendered,
+// table cells are re-used
+@property (nonatomic) BOOL isSwitchOn;
 @end
 
 @implementation MBDebugPanelSimpleSwitchComponent
 
--(id)initWithTitle:(NSString*)title onSwitchChanged:(void(^)(BOOL))changeHandler
+-(id)initWithTitle:(NSString *)title
+      initialValue:(BOOL)isOn
+   onSwitchChanged:(void(^)(BOOL newValue))changeHandler
 {
     if (self = [super init]) {
         [self setOnSwitchChanged:changeHandler];
+        [self setIsSwitchOn:isOn];
         [self setTitle:title];
     }
     return self;
@@ -63,8 +70,10 @@
 -(void)switchValueChanged:(id)sender
 {
     UISwitch *theSwitch = (id)sender;
-    if (self.onSwitchChanged)
+    if (self.onSwitchChanged) {
+        self.isSwitchOn = theSwitch.isOn;
         self.onSwitchChanged(theSwitch.isOn);
+    }
 }
 
 #pragma mark protected/overridden methods
@@ -77,6 +86,7 @@
 -(void)bindToReusableCell:(MBDebugPanelSimpleSwitchComponentCell*)cell
 {
     [cell.label setText:self.title];
+    [cell.theSwitch setOn:self.isSwitchOn];
     [cell.theSwitch addTarget:self
                        action:@selector(switchValueChanged:)
              forControlEvents:UIControlEventValueChanged];

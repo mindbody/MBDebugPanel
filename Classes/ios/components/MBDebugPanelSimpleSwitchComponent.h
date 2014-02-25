@@ -36,7 +36,10 @@
 
 /** Create a new UISwitch component
  @param title The main text to display next to the switch
+ @param initialValue Will the switch start on, or off?
  @param changeHandler A callback block to invoke when the switch value changes
  */
--(id)initWithTitle:(NSString*)title onSwitchChanged:(void(^)(BOOL))changeHandler;
+-(id)initWithTitle:(NSString *)title
+      initialValue:(BOOL)isOn
+   onSwitchChanged:(void(^)(BOOL newValue))changeHandler;
 @end

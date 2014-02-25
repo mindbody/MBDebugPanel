@@ -58,6 +58,7 @@
 
     MBDebugPanelSimpleSwitchComponent *switchComponent
     = [[MBDebugPanelSimpleSwitchComponent alloc] initWithTitle:[NSString stringWithFormat:@"Feature switch for %@", NSStringFromClass(self.class)]
+                                                  initialValue:NO
                                                onSwitchChanged:(^(BOOL newValue) {
         NSLog(@"Switch changed. New value => %d", newValue);
     })];
