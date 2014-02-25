@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MBDebugPanel"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A painless, configurable, hidden panel to add shortcuts to run code, test features, or whatever you like."
   s.description      = <<-DESC
                        MBDebugPanel offers a simple way to embed a set of dev-mode-only features 

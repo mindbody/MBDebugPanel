@@ -14,7 +14,7 @@ It offers a *simple way* to define helper tools, and present them in a Table Vie
 ```objc
 
 // Define a component.
-MBDebugPanelSimpleButtonComponent *switchComponent
+MBDebugPanelSimpleButtonComponent *buttonComponent
 = [[MBDebugPanelSimpleButtonComponent alloc] initWithTitle:@"Trigger Some Call"
                                                buttonTitle:@"Do it!"
                                            onButtonPressed:^{
@@ -28,6 +28,8 @@ MBDebugPanelSimpleButtonComponent *switchComponent
     [MBDebugPanel hide];
 }];
 
+[MBDebugPanel addComponent:buttonComponent];
+
 ...
 
 // Present the panel above the root view.
@@ -37,15 +39,15 @@ MBDebugPanelSimpleButtonComponent *switchComponent
 
 ## Included Components
 
-`MBDebugPanel` ships with two `MBDebugPanelComponent` implementations to get handle common scenarios:
+`MBDebugPanel` ships with two `MBDebugPanelComponent` implementations to handle common scenarios:
 
 <br/>
-`MBDebugPanelSimpleSwitchComponent` -- renders as a UISwitch and associated description label
+`MBDebugPanelSimpleSwitchComponent` -- renders a UISwitch and description label
 
 ![Imgur](http://i.imgur.com/KVJcmUp.png)
 
 <br/>
-`MBDebugPanelSimpleButtonComponent` -- renders as a UIButton and associated description label 
+`MBDebugPanelSimpleButtonComponent` -- renders a UIButton and description label 
 
 ![Imgur](http://i.imgur.com/oMVucUG.png)
 
