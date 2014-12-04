@@ -10,7 +10,7 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>31DE3C72C35447F48CF61701</key>
+		<key>2849FE96660CC5B16F5A44A9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -19,9 +19,9 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-DemoPods.xcconfig</string>
+			<string>Pods-DemoPods.release.xcconfig</string>
 			<key>path</key>
-			<string>../Pods/Pods-DemoPods.xcconfig</string>
+			<string>../Pods/Target Support Files/Pods-DemoPods/Pods-DemoPods.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -37,6 +37,21 @@
 			<string>libPods-DemoPods.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>620D79FA020F5A7A57346294</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-DemoPods.debug.xcconfig</string>
+			<key>path</key>
+			<string>../Pods/Target Support Files/Pods-DemoPods/Pods-DemoPods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8E47CD0ED99D4A9BA4A3FE8C</key>
 		<dict>
@@ -57,7 +72,7 @@
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/../Pods/Pods-DemoPods-resources.sh"
+			<string>"${SRCROOT}/../Pods/Target Support Files/Pods-DemoPods/Pods-DemoPods-resources.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
@@ -68,6 +83,20 @@
 			<string>4A09AA1F917048C7B2C1D36D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>C66B8F4769F796625D831105</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>620D79FA020F5A7A57346294</string>
+				<string>2849FE96660CC5B16F5A44A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EB4A23655A7A4E77A7684583</key>
 		<dict>
@@ -107,7 +136,7 @@ fi
 				<string>FDCFAD4018A49F5800E4AD74</string>
 				<string>FDCFAD1718A49F5800E4AD74</string>
 				<string>FDCFAD1618A49F5800E4AD74</string>
-				<string>31DE3C72C35447F48CF61701</string>
+				<string>C66B8F4769F796625D831105</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -985,7 +1014,7 @@ fi
 		<key>FDCFAD4B18A49F5800E4AD74</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>31DE3C72C35447F48CF61701</string>
+			<string>620D79FA020F5A7A57346294</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1011,7 +1040,7 @@ fi
 		<key>FDCFAD4C18A49F5800E4AD74</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>31DE3C72C35447F48CF61701</string>
+			<string>2849FE96660CC5B16F5A44A9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>

@@ -67,8 +67,17 @@
                                                onButtonPressed:(^{
         NSLog(@"Button tapped!");
     })];
-
-    return _debugPanelComponents = @[switchComponent, buttonComponent];
+    
+    MBDebugPanelSimpleTextFieldComponent *textFieldComponent
+    = [[MBDebugPanelSimpleTextFieldComponent alloc] initWithTitle:@"Change yer value!"
+                                                  placeholderText:@"Value goes here!"
+                                                      initialText:^NSString *{
+                                                          return @"Change me!";
+                                                      } onEditingDidEnd:^(NSString *text) {
+                                                          NSLog(@"Text Field changed. New value => %@", text);
+                                                      }];
+    
+    return _debugPanelComponents = @[switchComponent, buttonComponent, textFieldComponent];
 }
 
 -(void)viewDidAppear:(BOOL)animated

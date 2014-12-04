@@ -35,6 +35,7 @@
 #import "MBDebugPanelSimpleComponent.h"
 #import "MBDebugPanelSimpleButtonComponent.h"
 #import "MBDebugPanelSimpleSwitchComponent.h"
+#import "MBDebugPanelSimpleTextFieldComponent.h"
 
 @interface MBDebugPanel : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
