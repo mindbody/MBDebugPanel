@@ -1,10 +1,12 @@
 PODS:
-  - Kiwi/ARC (2.2.3)
-  - Kiwi/NonARC (2.2.3)
-  - Kiwi/XCTest (2.2.3):
+  - JGMethodSwizzler (2.0.1)
+  - Kiwi/ARC (2.2.4)
+  - Kiwi/NonARC (2.2.4)
+  - Kiwi/XCTest (2.2.4):
     - Kiwi/ARC
     - Kiwi/NonARC
-  - MBDebugPanel (0.1.0)
+  - MBDebugPanel (0.2.1):
+    - JGMethodSwizzler
 
 DEPENDENCIES:
   - Kiwi/XCTest
@@ -12,10 +14,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   MBDebugPanel:
-    :path: ./MBDebugPanel.podspec
+    :path: "./MBDebugPanel.podspec"
 
 SPEC CHECKSUMS:
-  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
-  MBDebugPanel: 6b538b2b35c40905a941bf1b8d02f1239bc6ebd1
+  JGMethodSwizzler: caf2af700934bab5f1ed048af54224986bcb05eb
+  Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
+  MBDebugPanel: e6022935d318825d6041b3313601494b133cfd3a
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.36.1
