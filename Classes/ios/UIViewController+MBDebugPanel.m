@@ -27,7 +27,7 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
 
 - (void)setMb_debugMenuItemsManagementEnabled:(BOOL)mb_debugMenuItemsManagementEnabled
 {
-    // TODO: what if we call this from viewWillAppear or viewDidDisappear??
+    // TODO: test what happens if we call this from viewWillAppear or viewDidDisappear
 
     if (mb_debugMenuItemsManagementEnabled == true && self.mb_debugMenuItemsManagementEnabled == false)
     {
