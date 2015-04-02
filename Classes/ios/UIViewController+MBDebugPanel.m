@@ -76,6 +76,11 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     return result;
 }
 
+- (BOOL)viewIsVisible
+{
+    return self.isViewLoaded && self.view.superview != nil;
+}
+
 - (void)mb_addManagedDebugMenuItems:(NSArray *)items
 {
     if (self.mb_managedDebugMenuItems == nil)
@@ -84,6 +89,11 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     } else
     {
         [self.mb_managedDebugMenuItems addObjectsFromArray:items];
+    }
+    
+    if (self.mb_debugMenuItemsManagementEnabled && self.viewIsVisible)
+    {
+        [MBDebugPanel addComponentsFromArray:items];
     }
 }
 
