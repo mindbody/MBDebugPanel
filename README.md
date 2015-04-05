@@ -106,6 +106,46 @@ MBDebugPanelSimpleButtonComponent *makeFakeUserButton_;
 
 @end
 
+##Automated Management Usage
+Automatic management of view controller specific components (like above) can be enabled and disabled via a series of extension selectors on the UIViewController class.
+
+First, to enable component management:
+
+```objc
+@implementation MyAutomatedViewController
+
+-(void)viewDidLoad
+{
+    self.mb_debugMenuItemsManagementEnabled = YES;
+    ...
+}
+```
+
+Next, decide which one or more component items you'd like managed:
+
+```objc
+-(void)viewDidLoad
+{
+    self.mb_debugMenuItemsManagementEnabled = YES;
+	
+    MBDebugPanelSimpleButtonComponent *button = [[MBDebugPanelSimpleButtonComponent alloc] initWithTitle:@"Test Button" buttonTitle:@"Pushh Me" onButtonPressed:^{
+		NSLog(@"Pushed!");
+    }];
+    
+    [self mb_addManagedDebugMenuItems:@[button] ];
+
+    ...
+}
+```
+
+Done! If you'd like to stop having one or more component items managed you can remove it:
+
+```obj
+    [self mb_removeManagedDebugMenuItems:@[self.debugButton_] ];
+```
+
+Please note that automated management uses swizzling.
+
 ## Additional APIs
 
 A detailed description of all available APIs is visible in `MBDebugPanel.h`
