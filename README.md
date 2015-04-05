@@ -150,6 +150,8 @@ Please note that automated management uses swizzling.
 
 A detailed description of all available APIs is visible in `MBDebugPanel.h`
 
+A number of common utility selectors can be found in `UIViewController+MBDebugPanel.h` including simplified ways to open the Debug Panel as well as add a gesture recognizer programatically to trigger opening of the Debug Panel.
+
 ## Demo App
 
 To run the example project; clone the repo and open `MBDebugPanel.xcworkspace`. Select and run the Demo app's scheme.
