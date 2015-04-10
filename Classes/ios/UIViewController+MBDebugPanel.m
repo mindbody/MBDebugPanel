@@ -75,7 +75,7 @@ const char* MB_UIViewController_Utility_managedDebugPanelItemsKey = "MB_UIViewCo
     return result;
 }
 
-- (BOOL)viewIsVisible
+- (BOOL)viewIsAttached
 {
     return self.isViewLoaded && self.view.superview != nil;
 }
@@ -89,7 +89,8 @@ const char* MB_UIViewController_Utility_managedDebugPanelItemsKey = "MB_UIViewCo
         [self.mb_managedDebugPanelItems addObjectsFromArray:items];
     }
     
-    if (self.mb_debugPanelItemsManagementEnabled && self.viewIsVisible) {
+    if (self.mb_debugPanelItemsManagementEnabled && self.viewIsAttached) {
+        // If we've already had viewWillAppear called add items now manually!
         [MBDebugPanel addComponentsFromArray:items];
     }
 }
