@@ -10,15 +10,15 @@
 
 @interface UIViewController (MBDebugPanel)
 
-@property (readwrite) BOOL mb_debugMenuItemsManagementEnabled;
-- (void)mb_addManagedDebugMenuItems:(NSArray *)items;
-- (void)mb_removeManagedDebugMenuItems:(NSArray *)items;
+@property (readwrite) BOOL mb_debugPanelItemsManagementEnabled;
+- (void)mb_addManagedDebugPanelItems:(NSArray *)items;
+- (void)mb_removeManagedDebugPanelItems:(NSArray *)items;
 
-- (void)mb_addDebugMenuGestureRecognizer:(UIGestureRecognizer *)recognizer;
-- (void)mb_addDebugMenuGestureRecognizer:(UIGestureRecognizer *)recognizer onView:(UIView *)view;
+- (void)mb_addDebugPanelGestureRecognizer:(UIGestureRecognizer *)recognizer;
+- (void)mb_addDebugPanelGestureRecognizer:(UIGestureRecognizer *)recognizer onView:(UIView *)view;
 
-- (void)mb_addDebugMenuTapGestureRecognizer:(NSUInteger)numberOfTaps;
-- (void)mb_addDebugMenuTapGestureRecognizer:(NSUInteger)numberOfTaps onView:(UIView *)view;
+- (void)mb_addDebugPanelTapGestureRecognizer:(NSUInteger)numberOfTaps;
+- (void)mb_addDebugPanelTapGestureRecognizer:(NSUInteger)numberOfTaps onView:(UIView *)view;
 
 - (void)mb_openDebugPanel;
 

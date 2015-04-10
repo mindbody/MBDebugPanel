@@ -14,29 +14,29 @@
 
 #import <objc/runtime.h>
 
-NSString *const MB_UIViewController_Utility_debugMenuItemsManagementEnabledKey = @"MB_UIViewController_Utility_debugMenuItemsManagementEnabled";
-NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIViewController_Utility_managedDebugMenuItemsKey";
+NSString *const MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey = @"MB_UIViewController_Utility_debugPanelItemsManagementEnabled";
+NSString *const MB_UIViewController_Utility_managedDebugPanelItemsKey = @"MB_UIViewController_Utility_managedDebugPanelItemsKey";
 
 @interface UIViewController (MBDebugPanel_Private)
 
-@property (retain, readwrite) NSMutableArray *mb_managedDebugMenuItems;
+@property (retain, readwrite) NSMutableArray *mb_managedDebugPanelItems;
 
 @end
 
 @implementation UIViewController (MBDebugPanel)
 
-- (void)setMb_debugMenuItemsManagementEnabled:(BOOL)mb_debugMenuItemsManagementEnabled
+- (void)setMb_debugPanelItemsManagementEnabled:(BOOL)mb_debugPanelItemsManagementEnabled
 {
     // TODO: test what happens if we call this from viewWillAppear or viewDidDisappear
 
-    if (mb_debugMenuItemsManagementEnabled != self.mb_debugMenuItemsManagementEnabled) {
+    if (mb_debugPanelItemsManagementEnabled != self.mb_debugPanelItemsManagementEnabled) {
 
-        if (mb_debugMenuItemsManagementEnabled == true) {
+        if (mb_debugPanelItemsManagementEnabled == true) {
             [self swizzleMethod:@selector(viewWillAppear:) withReplacement:JGMethodReplacementProviderBlock {
                 return JGMethodReplacement(void, UIViewController *, BOOL animated) {
                     JGOriginalImplementation(BOOL, animated);
                     
-                    [MBDebugPanel addComponentsFromArray:self.mb_managedDebugMenuItems];
+                    [MBDebugPanel addComponentsFromArray:self.mb_managedDebugPanelItems];
                 };
             }];
             
@@ -48,7 +48,7 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
                         [MBDebugPanel hide];
                     }
                     
-                    [MBDebugPanel removeComponentsInArray:self.mb_managedDebugMenuItems];
+                    [MBDebugPanel removeComponentsInArray:self.mb_managedDebugPanelItems];
                 };
             }];
         }
@@ -57,15 +57,15 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
             [self deswizzleMethod:@selector(viewDidDisappear:) ];
         }
 
-        objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugMenuItemsManagementEnabledKey), [NSNumber numberWithBool:mb_debugMenuItemsManagementEnabled], OBJC_ASSOCIATION_RETAIN);
+        objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey), [NSNumber numberWithBool:mb_debugPanelItemsManagementEnabled], OBJC_ASSOCIATION_RETAIN);
     }
 }
 
-- (BOOL)mb_debugMenuItemsManagementEnabled
+- (BOOL)mb_debugPanelItemsManagementEnabled
 {
     BOOL result = NO;
     
-    id boolObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugMenuItemsManagementEnabledKey) );
+    id boolObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey) );
 
     if ( [boolObject isKindOfClass:[NSNumber class] ] ) {
         NSNumber *boolNumber = boolObject;
@@ -80,35 +80,35 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     return self.isViewLoaded && self.view.superview != nil;
 }
 
-- (void)mb_addManagedDebugMenuItems:(NSArray *)items
+- (void)mb_addManagedDebugPanelItems:(NSArray *)items
 {
-    if (self.mb_managedDebugMenuItems == nil) {
-        self.mb_managedDebugMenuItems = [NSMutableArray arrayWithArray:items];
+    if (self.mb_managedDebugPanelItems == nil) {
+        self.mb_managedDebugPanelItems = [NSMutableArray arrayWithArray:items];
     }
     else {
-        [self.mb_managedDebugMenuItems addObjectsFromArray:items];
+        [self.mb_managedDebugPanelItems addObjectsFromArray:items];
     }
     
-    if (self.mb_debugMenuItemsManagementEnabled && self.viewIsVisible) {
+    if (self.mb_debugPanelItemsManagementEnabled && self.viewIsVisible) {
         [MBDebugPanel addComponentsFromArray:items];
     }
 }
 
-- (void)mb_removeManagedDebugMenuItems:(NSArray *)items
+- (void)mb_removeManagedDebugPanelItems:(NSArray *)items
 {
-    [self.mb_managedDebugMenuItems removeObjectsInArray:items];
+    [self.mb_managedDebugPanelItems removeObjectsInArray:items];
 }
 
-- (void)setMb_managedDebugMenuItems:(NSMutableArray *)managedDebugMenuItems
+- (void)setMb_managedDebugPanelItems:(NSMutableArray *)managedDebugPanelItems
 {
-    objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugMenuItemsKey), managedDebugMenuItems, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugPanelItemsKey), managedDebugPanelItems, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (NSMutableArray *)mb_managedDebugMenuItems
+- (NSMutableArray *)mb_managedDebugPanelItems
 {
     NSMutableArray *result;
     
-    id itemsObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugMenuItemsKey) );
+    id itemsObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugPanelItemsKey) );
     
     if ( [itemsObject isKindOfClass:[NSMutableArray class] ] ) {
         result = itemsObject;
@@ -117,23 +117,23 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     return result;
 }
 
-- (void)mb_addDebugMenuGestureRecognizer:(UIGestureRecognizer *)recognizer
+- (void)mb_addDebugPanelGestureRecognizer:(UIGestureRecognizer *)recognizer
 {
-    [self mb_addDebugMenuGestureRecognizer:recognizer onView:self.view];
+    [self mb_addDebugPanelGestureRecognizer:recognizer onView:self.view];
 }
 
-- (void)mb_addDebugMenuGestureRecognizer:(UIGestureRecognizer *)recognizer onView:(UIView *)view
+- (void)mb_addDebugPanelGestureRecognizer:(UIGestureRecognizer *)recognizer onView:(UIView *)view
 {
     [recognizer addTarget:self action:@selector(mb_openDebugPanelFromGesture:) ];
     [view addGestureRecognizer:recognizer];
 }
 
-- (void)mb_addDebugMenuTapGestureRecognizer:(NSUInteger)numberOfTaps
+- (void)mb_addDebugPanelTapGestureRecognizer:(NSUInteger)numberOfTaps
 {
-    [self mb_addDebugMenuTapGestureRecognizer:numberOfTaps onView:self.view];
+    [self mb_addDebugPanelTapGestureRecognizer:numberOfTaps onView:self.view];
 }
 
-- (void)mb_addDebugMenuTapGestureRecognizer:(NSUInteger)numberOfTaps onView:(UIView *)view
+- (void)mb_addDebugPanelTapGestureRecognizer:(NSUInteger)numberOfTaps onView:(UIView *)view
 {
     UITapGestureRecognizer *tapGesture = [ [UITapGestureRecognizer alloc] initWithTarget:self
                                                                                   action:@selector(mb_openDebugPanelFromGesture:) ];

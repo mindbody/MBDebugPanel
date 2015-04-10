@@ -40,8 +40,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.mb_debugMenuItemsManagementEnabled = YES;
-    [self mb_addManagedDebugMenuItems:self.debugPanelComponents];
+    self.mb_debugPanelItemsManagementEnabled = YES;
+    [self mb_addManagedDebugPanelItems:self.debugPanelComponents];
 }
 
 -(void)configureAndShowDebugPanel
