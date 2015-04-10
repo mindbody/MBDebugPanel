@@ -28,37 +28,37 @@ NSString *const MB_UIViewController_Utility_managedDebugPanelItemsKey = @"MB_UIV
 - (void)setMb_debugPanelItemsManagementEnabled:(BOOL)mb_debugPanelItemsManagementEnabled
 {
     // TODO: test what happens if we call this from viewWillAppear or viewDidDisappear
-
-    if (mb_debugPanelItemsManagementEnabled != self.mb_debugPanelItemsManagementEnabled) {
-
-        if (mb_debugPanelItemsManagementEnabled == true) {
-            [self swizzleMethod:@selector(viewWillAppear:) withReplacement:JGMethodReplacementProviderBlock {
-                return JGMethodReplacement(void, UIViewController *, BOOL animated) {
-                    JGOriginalImplementation(BOOL, animated);
-                    
-                    [MBDebugPanel addComponentsFromArray:self.mb_managedDebugPanelItems];
-                };
-            }];
-            
-            [self swizzleMethod:@selector(viewDidDisappear:) withReplacement:JGMethodReplacementProviderBlock {
-                return JGMethodReplacement(void, UIViewController *, BOOL animated) {
-                    JGOriginalImplementation(BOOL, animated);
-                    
-                    if ( [MBDebugPanel isPresented] ) {
-                        [MBDebugPanel hide];
-                    }
-                    
-                    [MBDebugPanel removeComponentsInArray:self.mb_managedDebugPanelItems];
-                };
-            }];
-        }
-        else {
-            [self deswizzleMethod:@selector(viewWillAppear:) ];
-            [self deswizzleMethod:@selector(viewDidDisappear:) ];
-        }
-
-        objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey), [NSNumber numberWithBool:mb_debugPanelItemsManagementEnabled], OBJC_ASSOCIATION_RETAIN);
+    if (mb_debugPanelItemsManagementEnabled == self.mb_debugPanelItemsManagementEnabled) {
+        return;
     }
+
+    if (mb_debugPanelItemsManagementEnabled == true) {
+        [self swizzleMethod:@selector(viewWillAppear:) withReplacement:JGMethodReplacementProviderBlock {
+            return JGMethodReplacement(void, UIViewController *, BOOL animated) {
+                JGOriginalImplementation(BOOL, animated);
+                
+                [MBDebugPanel addComponentsFromArray:self.mb_managedDebugPanelItems];
+            };
+        }];
+        
+        [self swizzleMethod:@selector(viewDidDisappear:) withReplacement:JGMethodReplacementProviderBlock {
+            return JGMethodReplacement(void, UIViewController *, BOOL animated) {
+                JGOriginalImplementation(BOOL, animated);
+                
+                if ( [MBDebugPanel isPresented] ) {
+                    [MBDebugPanel hide];
+                }
+                
+                [MBDebugPanel removeComponentsInArray:self.mb_managedDebugPanelItems];
+            };
+        }];
+    }
+    else {
+        [self deswizzleMethod:@selector(viewWillAppear:) ];
+        [self deswizzleMethod:@selector(viewDidDisappear:) ];
+    }
+
+    objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey), [NSNumber numberWithBool:mb_debugPanelItemsManagementEnabled], OBJC_ASSOCIATION_RETAIN);
 }
 
 - (BOOL)mb_debugPanelItemsManagementEnabled
