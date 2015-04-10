@@ -14,8 +14,8 @@
 
 #import <objc/runtime.h>
 
-NSString *const MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey = @"MB_UIViewController_Utility_debugPanelItemsManagementEnabled";
-NSString *const MB_UIViewController_Utility_managedDebugPanelItemsKey = @"MB_UIViewController_Utility_managedDebugPanelItemsKey";
+const char* MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey = "MB_UIViewController_Utility_debugPanelItemsManagementEnabled";
+const char* MB_UIViewController_Utility_managedDebugPanelItemsKey = "MB_UIViewController_Utility_managedDebugPanelItemsKey";
 
 @interface UIViewController (MBDebugPanel_Private)
 
@@ -58,14 +58,14 @@ NSString *const MB_UIViewController_Utility_managedDebugPanelItemsKey = @"MB_UIV
         [self deswizzleMethod:@selector(viewDidDisappear:) ];
     }
 
-    objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey), [NSNumber numberWithBool:mb_debugPanelItemsManagementEnabled], OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey, @(mb_debugPanelItemsManagementEnabled), OBJC_ASSOCIATION_RETAIN);
 }
 
 - (BOOL)mb_debugPanelItemsManagementEnabled
 {
     BOOL result = NO;
     
-    id boolObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey) );
+    id boolObject = objc_getAssociatedObject(self, MB_UIViewController_Utility_debugPanelItemsManagementEnabledKey);
 
     if ( [boolObject isKindOfClass:[NSNumber class] ] ) {
         NSNumber *boolNumber = boolObject;
@@ -101,14 +101,14 @@ NSString *const MB_UIViewController_Utility_managedDebugPanelItemsKey = @"MB_UIV
 
 - (void)setMb_managedDebugPanelItems:(NSMutableArray *)managedDebugPanelItems
 {
-    objc_setAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugPanelItemsKey), managedDebugPanelItems, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, MB_UIViewController_Utility_managedDebugPanelItemsKey, managedDebugPanelItems, OBJC_ASSOCIATION_RETAIN);
 }
 
 - (NSMutableArray *)mb_managedDebugPanelItems
 {
     NSMutableArray *result;
     
-    id itemsObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugPanelItemsKey) );
+    id itemsObject = objc_getAssociatedObject(self, MB_UIViewController_Utility_managedDebugPanelItemsKey);
     
     if ( [itemsObject isKindOfClass:[NSMutableArray class] ] ) {
         result = itemsObject;
