@@ -29,10 +29,9 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
 {
     // TODO: test what happens if we call this from viewWillAppear or viewDidDisappear
 
-    if (mb_debugMenuItemsManagementEnabled != self.mb_debugMenuItemsManagementEnabled)
-    {
-        if (mb_debugMenuItemsManagementEnabled == true)
-        {
+    if (mb_debugMenuItemsManagementEnabled != self.mb_debugMenuItemsManagementEnabled) {
+
+        if (mb_debugMenuItemsManagementEnabled == true) {
             [self swizzleMethod:@selector(viewWillAppear:) withReplacement:JGMethodReplacementProviderBlock {
                 return JGMethodReplacement(void, UIViewController *, BOOL animated) {
                     JGOriginalImplementation(BOOL, animated);
@@ -52,8 +51,8 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
                     [MBDebugPanel removeComponentsInArray:self.mb_managedDebugMenuItems];
                 };
             }];
-        } else
-        {
+        }
+        else {
             [self deswizzleMethod:@selector(viewWillAppear:) ];
             [self deswizzleMethod:@selector(viewDidDisappear:) ];
         }
@@ -67,8 +66,8 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     BOOL result = NO;
     
     id boolObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_debugMenuItemsManagementEnabledKey) );
-    if ( [boolObject isKindOfClass:[NSNumber class] ] )
-    {
+
+    if ( [boolObject isKindOfClass:[NSNumber class] ] ) {
         NSNumber *boolNumber = boolObject;
         result = [boolNumber boolValue];
     }
@@ -83,16 +82,14 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
 
 - (void)mb_addManagedDebugMenuItems:(NSArray *)items
 {
-    if (self.mb_managedDebugMenuItems == nil)
-    {
+    if (self.mb_managedDebugMenuItems == nil) {
         self.mb_managedDebugMenuItems = [NSMutableArray arrayWithArray:items];
-    } else
-    {
+    }
+    else {
         [self.mb_managedDebugMenuItems addObjectsFromArray:items];
     }
     
-    if (self.mb_debugMenuItemsManagementEnabled && self.viewIsVisible)
-    {
+    if (self.mb_debugMenuItemsManagementEnabled && self.viewIsVisible) {
         [MBDebugPanel addComponentsFromArray:items];
     }
 }
@@ -112,8 +109,8 @@ NSString *const MB_UIViewController_Utility_managedDebugMenuItemsKey = @"MB_UIVi
     NSMutableArray *result;
     
     id itemsObject = objc_getAssociatedObject(self, CFBridgingRetain(MB_UIViewController_Utility_managedDebugMenuItemsKey) );
-    if ( [itemsObject isKindOfClass:[NSMutableArray class] ] )
-    {
+    
+    if ( [itemsObject isKindOfClass:[NSMutableArray class] ] ) {
         result = itemsObject;
     }
     
