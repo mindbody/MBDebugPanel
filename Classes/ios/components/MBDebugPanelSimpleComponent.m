@@ -68,7 +68,7 @@
 
 -(UINib*)cellNib_
 {
-    return [UINib nibWithNibName:[self cellClassName] bundle:nil];
+    return [UINib nibWithNibName:[self cellClassName] bundle:[NSBundle bundleForClass:[MBDebugPanel class]]];
 }
 
 -(void)bindToReusableCell:(UITableViewCell*)cell
