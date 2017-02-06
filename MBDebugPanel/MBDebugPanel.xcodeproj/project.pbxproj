@@ -10,6 +10,7 @@
 		281CB9922ACC411EA0BC3CBB /* libPods-TestPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5E80756DEB4D899888424F /* libPods-TestPods.a */; };
 		3C18E3FA1A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18E3F91A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m */; };
 		3C18E3FC1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C18E3FB1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
+		3C4E967A1AC60C31005A5371 /* UIViewController+MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E96761AC60601005A5371 /* UIViewController+MBDebugPanel.m */; };
 		FD3CB35D18AC656F00FD9427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF418A49E9200E4AD74 /* Foundation.framework */; };
 		FD3CB35F18AC656F00FD9427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3CB35E18AC656F00FD9427 /* CoreGraphics.framework */; };
 		FD3CB36018AC656F00FD9427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF618A49E9200E4AD74 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 		3C18E3F81A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleTextFieldComponent.h; sourceTree = "<group>"; };
 		3C18E3F91A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleTextFieldComponent.m; sourceTree = "<group>"; };
 		3C18E3FB1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleTextFieldComponentCell.xib; sourceTree = "<group>"; };
+		3C4E96751AC60601005A5371 /* UIViewController+MBDebugPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MBDebugPanel.h"; sourceTree = "<group>"; };
+		3C4E96761AC60601005A5371 /* UIViewController+MBDebugPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBDebugPanel.m"; sourceTree = "<group>"; };
 		4442BCB4383AF8E78C055FBE /* Pods-TestPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TestPods/Pods-TestPods.release.xcconfig"; sourceTree = "<group>"; };
 		DF5E80756DEB4D899888424F /* libPods-TestPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3CB35C18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBDebugPanelTestsApplicationContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +212,8 @@
 				FDCFAD5018A4A0BD00E4AD74 /* MBDebugPanel.h */,
 				FDCFAD5118A4A0BD00E4AD74 /* MBDebugPanel.m */,
 				FDCFAD5D18A974BD00E4AD74 /* MBDebugPanelComponent.h */,
+				3C4E96751AC60601005A5371 /* UIViewController+MBDebugPanel.h */,
+				3C4E96761AC60601005A5371 /* UIViewController+MBDebugPanel.m */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4E967A1AC60C31005A5371 /* UIViewController+MBDebugPanel.m in Sources */,
 				FDCFACFF18A49E9200E4AD74 /* MBDebugPanelTests.m in Sources */,
 				FD89160B18AC3E1300115491 /* MBDebugPanelSimpleComponent.m in Sources */,
 				FDCFAD5218A4A0BD00E4AD74 /* MBDebugPanel.m in Sources */,

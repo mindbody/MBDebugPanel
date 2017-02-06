@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
+  s.dependency 'JGMethodSwizzler'
 
   s.source_files = 'Classes/ios/*.{h,m}', 'Classes/ios/{private,components}/*.{h,m}'
   s.resources = 'Assets/componentCells/*.xib'

@@ -39,6 +39,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.mb_debugPanelItemsManagementEnabled = YES;
+    [self mb_addManagedDebugPanelItems:self.debugPanelComponents];
 }
 
 -(void)configureAndShowDebugPanel
@@ -78,19 +81,6 @@
                                                       }];
     
     return _debugPanelComponents = @[switchComponent, buttonComponent, textFieldComponent];
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [MBDebugPanel addComponentsFromArray:self.debugPanelComponents];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    if ([MBDebugPanel isPresented]) {
-        [MBDebugPanel hide];
-    }
-    [MBDebugPanel removeComponentsInArray:self.debugPanelComponents];
 }
 
 - (IBAction)showPanelTapped:(id)sender {
