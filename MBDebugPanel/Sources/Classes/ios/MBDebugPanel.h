@@ -82,4 +82,10 @@
  */
 +(BOOL)isPresented;
 
+/*
+ Present a view controller from the DebugPanel's parent viewcontroller
+ */
++ (void)presentViewController:(UIViewController *)viewControllerToPresent
+                     animated:(BOOL)flag
+                   completion:(void (^ __nullable)(void))completion;
 @end
