@@ -87,6 +87,11 @@
                                                                    completion:completion];
 }
 
++ (void)setTitle:(NSString*)title
+{
+    [MBDebugPanel.sharedPanel_ setTitle:title];
+}
+
 #pragma mark UITableViewDataSource/Delegate
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

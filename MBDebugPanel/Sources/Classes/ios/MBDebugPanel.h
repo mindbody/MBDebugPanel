@@ -87,5 +87,10 @@
  */
 + (void)presentViewController:(UIViewController *)viewControllerToPresent
                      animated:(BOOL)flag
-                   completion:(void (^ __nullable)(void))completion;
+                   completion:(void (^)(void))completion;
+
+/*
+ Expose the ability to set the DebugPanel's modal title
+ */
++ (void)setTitle:(NSString*)title;
 @end
