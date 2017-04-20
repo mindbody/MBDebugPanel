@@ -7,80 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		281CB9922ACC411EA0BC3CBB /* libPods-TestPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5E80756DEB4D899888424F /* libPods-TestPods.a */; };
-		3C18E3FA1A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18E3F91A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m */; };
-		3C18E3FC1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C18E3FB1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
-		FD3CB35D18AC656F00FD9427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF418A49E9200E4AD74 /* Foundation.framework */; };
+		9A10FA401EA5633500D2B095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A10FA371EA5633500D2B095 /* InfoPlist.strings */; };
+		9A10FA411EA5633500D2B095 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A10FA391EA5633500D2B095 /* Images.xcassets */; };
+		9A10FA421EA5633500D2B095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10FA3A1EA5633500D2B095 /* main.m */; };
+		9A10FA431EA5633500D2B095 /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10FA3C1EA5633500D2B095 /* MBAppDelegate.m */; };
+		9A10FA441EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A10FA3D1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist */; };
+		9A5DE2BB1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29B1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib */; };
+		9A5DE2BC1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29B1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib */; };
+		9A5DE2C01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29C1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib */; };
+		9A5DE2C11EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29C1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib */; };
+		9A5DE2C51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
+		9A5DE2C61EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
+		9A5DE2CA1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2CE1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */; };
+		9A5DE2CF1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */; };
+		9A5DE2D31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2D71EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */; };
+		9A5DE2D81EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */; };
+		9A5DE2DC1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2E01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */; };
+		9A5DE2E11EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */; };
+		9A5DE2E51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2E91EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */; };
+		9A5DE2EA1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */; };
+		9A5DE2EE1EA55DC500C90F62 /* MBDebugPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2F21EA55DC500C90F62 /* MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */; };
+		9A5DE2F31EA55DC500C90F62 /* MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */; };
+		9A5DE2F71EA55DC500C90F62 /* MBDebugPanelComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5DE2FB1EA55DC500C90F62 /* MBDebugPanel_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */; };
+		9A5DE2FF1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */; };
+		9A5DE32F1EA55DC500C90F62 /* MBDebugPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2BA1EA55DC500C90F62 /* MBDebugPanel.h */; };
+		9A5DE34F1EA55DEC00C90F62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE3351EA55DEC00C90F62 /* InfoPlist.strings */; };
+		9A5DE3581EA55DEC00C90F62 /* MBDebugPanelSimpleComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE3371EA55DEC00C90F62 /* MBDebugPanelSimpleComponentTests.m */; };
+		9A5DE3641EA55DEC00C90F62 /* MBDebugPanelTests-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE3391EA55DEC00C90F62 /* MBDebugPanelTests-Prefix.pch */; };
+		9A5DE36E1EA55DEC00C90F62 /* MBDebugPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE33A1EA55DEC00C90F62 /* MBDebugPanelTests.m */; };
+		9A5DE3C61EA55EED00C90F62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DE3C51EA55EED00C90F62 /* UIKit.framework */; };
+		9A5DE3C81EA55EF400C90F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DE3C71EA55EF400C90F62 /* Foundation.framework */; };
+		9A5DE3CB1EA55FAB00C90F62 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DE3C31EA55EE400C90F62 /* XCTest.framework */; };
+		9A619E481EA5778D00A4F984 /* MBDebugPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */; };
+		9A619E491EA577DA00A4F984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DE3C51EA55EED00C90F62 /* UIKit.framework */; };
+		9AB6E6941EA5574F002DB509 /* MBDebugPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */; };
+		9AB6E6A01EA5574F002DB509 /* MBDebugPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */; };
+		9AB6E6A11EA5574F002DB509 /* MBDebugPanel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD3CB35F18AC656F00FD9427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3CB35E18AC656F00FD9427 /* CoreGraphics.framework */; };
-		FD3CB36018AC656F00FD9427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF618A49E9200E4AD74 /* UIKit.framework */; };
-		FD3CB36618AC656F00FD9427 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD3CB36418AC656F00FD9427 /* InfoPlist.strings */; };
-		FD3CB36818AC656F00FD9427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CB36718AC656F00FD9427 /* main.m */; };
-		FD3CB36C18AC656F00FD9427 /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3CB36B18AC656F00FD9427 /* MBAppDelegate.m */; };
-		FD3CB36E18AC656F00FD9427 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3CB36D18AC656F00FD9427 /* Images.xcassets */; };
-		FD3CB38B18AC6B2400FD9427 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCFAD7018AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib */; };
-		FD3CB38C18AC6B2400FD9427 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCFAD6E18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib */; };
-		FD8915DF18AB38EE00115491 /* MBDebugPanelSimpleComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8915DE18AB38EE00115491 /* MBDebugPanelSimpleComponentTests.m */; };
-		FD89160B18AC3E1300115491 /* MBDebugPanelSimpleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FD89160718AC234D00115491 /* MBDebugPanelSimpleComponent.m */; };
-		FDCFACF318A49E9200E4AD74 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF218A49E9200E4AD74 /* XCTest.framework */; };
-		FDCFACF518A49E9200E4AD74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF418A49E9200E4AD74 /* Foundation.framework */; };
-		FDCFACF718A49E9200E4AD74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDCFACF618A49E9200E4AD74 /* UIKit.framework */; };
-		FDCFACFD18A49E9200E4AD74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDCFACFB18A49E9200E4AD74 /* InfoPlist.strings */; };
-		FDCFACFF18A49E9200E4AD74 /* MBDebugPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFACFE18A49E9200E4AD74 /* MBDebugPanelTests.m */; };
-		FDCFAD5218A4A0BD00E4AD74 /* MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFAD5118A4A0BD00E4AD74 /* MBDebugPanel.m */; };
-		FDCFAD6C18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFAD6B18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.m */; };
-		FDCFAD6F18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCFAD6E18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib */; };
-		FDCFAD7118AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCFAD7018AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib */; };
-		FDCFAD7418AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCFAD7318AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9A5DE3C11EA55E4400C90F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCFACE518A49E6800E4AD74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3CB35B18AC656F00FD9427;
+			remoteInfo = MBDebugPanelTestsApplicationContainer;
+		};
+		9AB6E6951EA5574F002DB509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCFACE518A49E6800E4AD74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB6E68A1EA5574F002DB509;
+			remoteInfo = "MBDebugPanel iOS";
+		};
+		9AB6E6971EA5574F002DB509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCFACE518A49E6800E4AD74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3CB35B18AC656F00FD9427;
+			remoteInfo = MBDebugPanelTestsApplicationContainer;
+		};
+		9AB6E69E1EA5574F002DB509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCFACE518A49E6800E4AD74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB6E68A1EA5574F002DB509;
+			remoteInfo = "MBDebugPanel iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9AB6E6A71EA5574F002DB509 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9AB6E6A11EA5574F002DB509 /* MBDebugPanel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0543474BB18245234E20518B /* Pods-TestPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TestPods/Pods-TestPods.debug.xcconfig"; sourceTree = "<group>"; };
-		3C18E3F81A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleTextFieldComponent.h; sourceTree = "<group>"; };
-		3C18E3F91A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleTextFieldComponent.m; sourceTree = "<group>"; };
-		3C18E3FB1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleTextFieldComponentCell.xib; sourceTree = "<group>"; };
-		4442BCB4383AF8E78C055FBE /* Pods-TestPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TestPods/Pods-TestPods.release.xcconfig"; sourceTree = "<group>"; };
-		DF5E80756DEB4D899888424F /* libPods-TestPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A10FA381EA5633500D2B095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A10FA391EA5633500D2B095 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A10FA3A1EA5633500D2B095 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A10FA3B1EA5633500D2B095 /* MBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
+		9A10FA3C1EA5633500D2B095 /* MBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
+		9A10FA3D1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MBDebugPanelTestsApplicationContainer-Info.plist"; sourceTree = "<group>"; };
+		9A10FA3E1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBDebugPanelTestsApplicationContainer-Prefix.pch"; sourceTree = "<group>"; };
+		9A5DE29B1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleButtonComponentCell.xib; sourceTree = "<group>"; };
+		9A5DE29C1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleSwitchComponentCell.xib; sourceTree = "<group>"; };
+		9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleTextFieldComponentCell.xib; sourceTree = "<group>"; };
+		9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleButtonComponent.h; sourceTree = "<group>"; };
+		9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleButtonComponent.m; sourceTree = "<group>"; };
+		9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleComponent.h; sourceTree = "<group>"; };
+		9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleComponent.m; sourceTree = "<group>"; };
+		9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleSwitchComponent.h; sourceTree = "<group>"; };
+		9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleSwitchComponent.m; sourceTree = "<group>"; };
+		9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleTextFieldComponent.h; sourceTree = "<group>"; };
+		9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleTextFieldComponent.m; sourceTree = "<group>"; };
+		9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanel.h; sourceTree = "<group>"; };
+		9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanel.m; sourceTree = "<group>"; };
+		9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelComponent.h; sourceTree = "<group>"; };
+		9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanel_Private.h; sourceTree = "<group>"; };
+		9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleComponent_Protected.h; sourceTree = "<group>"; };
+		9A5DE2B61EA55DC500C90F62 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		9A5DE2BA1EA55DC500C90F62 /* MBDebugPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanel.h; sourceTree = "<group>"; };
+		9A5DE3361EA55DEC00C90F62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A5DE3371EA55DEC00C90F62 /* MBDebugPanelSimpleComponentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleComponentTests.m; sourceTree = "<group>"; };
+		9A5DE3381EA55DEC00C90F62 /* MBDebugPanelTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MBDebugPanelTests-Info.plist"; sourceTree = "<group>"; };
+		9A5DE3391EA55DEC00C90F62 /* MBDebugPanelTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBDebugPanelTests-Prefix.pch"; sourceTree = "<group>"; };
+		9A5DE33A1EA55DEC00C90F62 /* MBDebugPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelTests.m; sourceTree = "<group>"; };
+		9A5DE33C1EA55DEC00C90F62 /* Info-Tests-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Tests-iOS.plist"; sourceTree = "<group>"; };
+		9A5DE3C31EA55EE400C90F62 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9A5DE3C51EA55EED00C90F62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9A5DE3C71EA55EF400C90F62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBDebugPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB6E6931EA5574F002DB509 /* MBDebugPanel iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MBDebugPanel iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3CB35C18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBDebugPanelTestsApplicationContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3CB35E18AC656F00FD9427 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FD3CB36318AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBDebugPanelTestsApplicationContainer-Info.plist"; sourceTree = "<group>"; };
-		FD3CB36518AC656F00FD9427 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FD3CB36718AC656F00FD9427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD3CB36918AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBDebugPanelTestsApplicationContainer-Prefix.pch"; sourceTree = "<group>"; };
-		FD3CB36A18AC656F00FD9427 /* MBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
-		FD3CB36B18AC656F00FD9427 /* MBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
-		FD3CB36D18AC656F00FD9427 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FD8915DD18AB31D100115491 /* MBDebugPanel_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanel_Private.h; sourceTree = "<group>"; };
-		FD8915DE18AB38EE00115491 /* MBDebugPanelSimpleComponentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleComponentTests.m; sourceTree = "<group>"; };
-		FD89160618AC234D00115491 /* MBDebugPanelSimpleComponent.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleComponent.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
-		FD89160718AC234D00115491 /* MBDebugPanelSimpleComponent.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleComponent.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
-		FD89160A18AC248200115491 /* MBDebugPanelSimpleComponent_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleComponent_Protected.h; sourceTree = "<group>"; };
 		FDCFACEF18A49E9200E4AD74 /* MBDebugPanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBDebugPanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDCFACF218A49E9200E4AD74 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FDCFACF418A49E9200E4AD74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FDCFACF618A49E9200E4AD74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		FDCFACFA18A49E9200E4AD74 /* MBDebugPanelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBDebugPanelTests-Info.plist"; sourceTree = "<group>"; };
-		FDCFACFC18A49E9200E4AD74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FDCFACFE18A49E9200E4AD74 /* MBDebugPanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelTests.m; sourceTree = "<group>"; };
-		FDCFAD0018A49E9200E4AD74 /* MBDebugPanelTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBDebugPanelTests-Prefix.pch"; sourceTree = "<group>"; };
-		FDCFAD5018A4A0BD00E4AD74 /* MBDebugPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanel.h; sourceTree = "<group>"; };
-		FDCFAD5118A4A0BD00E4AD74 /* MBDebugPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanel.m; sourceTree = "<group>"; };
-		FDCFAD5D18A974BD00E4AD74 /* MBDebugPanelComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelComponent.h; sourceTree = "<group>"; };
-		FDCFAD6A18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleSwitchComponent.h; sourceTree = "<group>"; };
-		FDCFAD6B18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleSwitchComponent.m; sourceTree = "<group>"; };
-		FDCFAD6E18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleSwitchComponentCell.xib; sourceTree = "<group>"; };
-		FDCFAD7018AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBDebugPanelSimpleButtonComponentCell.xib; sourceTree = "<group>"; };
-		FDCFAD7218AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDebugPanelSimpleButtonComponent.h; sourceTree = "<group>"; };
-		FDCFAD7318AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDebugPanelSimpleButtonComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9AB6E6871EA5574F002DB509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB6E6901EA5574F002DB509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB6E6941EA5574F002DB509 /* MBDebugPanel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD3CB35918AC656F00FD9427 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A619E491EA577DA00A4F984 /* UIKit.framework in Frameworks */,
+				9A5DE3CB1EA55FAB00C90F62 /* XCTest.framework in Frameworks */,
 				FD3CB35F18AC656F00FD9427 /* CoreGraphics.framework in Frameworks */,
-				FD3CB36018AC656F00FD9427 /* UIKit.framework in Frameworks */,
-				FD3CB35D18AC656F00FD9427 /* Foundation.framework in Frameworks */,
+				9AB6E6A01EA5574F002DB509 /* MBDebugPanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,57 +170,155 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCFACF318A49E9200E4AD74 /* XCTest.framework in Frameworks */,
-				FDCFACF718A49E9200E4AD74 /* UIKit.framework in Frameworks */,
-				FDCFACF518A49E9200E4AD74 /* Foundation.framework in Frameworks */,
-				281CB9922ACC411EA0BC3CBB /* libPods-TestPods.a in Frameworks */,
+				9A619E481EA5778D00A4F984 /* MBDebugPanel.framework in Frameworks */,
+				9A5DE3C81EA55EF400C90F62 /* Foundation.framework in Frameworks */,
+				9A5DE3C61EA55EED00C90F62 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E481CC9963BB6941AA658161 /* Pods */ = {
+		9A10FA361EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer */ = {
 			isa = PBXGroup;
 			children = (
-				0543474BB18245234E20518B /* Pods-TestPods.debug.xcconfig */,
-				4442BCB4383AF8E78C055FBE /* Pods-TestPods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FD3CB36118AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */ = {
-			isa = PBXGroup;
-			children = (
-				FD3CB36A18AC656F00FD9427 /* MBAppDelegate.h */,
-				FD3CB36B18AC656F00FD9427 /* MBAppDelegate.m */,
-				FD3CB36D18AC656F00FD9427 /* Images.xcassets */,
-				FD3CB36218AC656F00FD9427 /* Supporting Files */,
+				9A10FA371EA5633500D2B095 /* InfoPlist.strings */,
+				9A10FA391EA5633500D2B095 /* Images.xcassets */,
+				9A10FA3A1EA5633500D2B095 /* main.m */,
+				9A10FA3B1EA5633500D2B095 /* MBAppDelegate.h */,
+				9A10FA3C1EA5633500D2B095 /* MBAppDelegate.m */,
+				9A10FA3D1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist */,
+				9A10FA3E1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Prefix.pch */,
+				9A10FA3F1EA5633500D2B095 /* Supporting Files */,
 			);
 			path = MBDebugPanelTestsApplicationContainer;
 			sourceTree = "<group>";
 		};
-		FD3CB36218AC656F00FD9427 /* Supporting Files */ = {
+		9A10FA3F1EA5633500D2B095 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD3CB36318AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer-Info.plist */,
-				FD3CB36418AC656F00FD9427 /* InfoPlist.strings */,
-				FD3CB36718AC656F00FD9427 /* main.m */,
-				FD3CB36918AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5DE2981EA55DC500C90F62 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2991EA55DC500C90F62 /* Assets */,
+				9A5DE29E1EA55DC500C90F62 /* Classes */,
+				9A5DE2B51EA55DC500C90F62 /* Supporting Files */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9A5DE2991EA55DC500C90F62 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE29A1EA55DC500C90F62 /* componentCells */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9A5DE29A1EA55DC500C90F62 /* componentCells */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE29B1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib */,
+				9A5DE29C1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib */,
+				9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */,
+			);
+			path = componentCells;
+			sourceTree = "<group>";
+		};
+		9A5DE29E1EA55DC500C90F62 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE29F1EA55DC500C90F62 /* ios */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9A5DE29F1EA55DC500C90F62 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2A01EA55DC500C90F62 /* components */,
+				9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */,
+				9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */,
+				9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */,
+				9A5DE2AC1EA55DC500C90F62 /* private */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		9A5DE2A01EA55DC500C90F62 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */,
+				9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */,
+				9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */,
+				9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */,
+				9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */,
+				9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */,
+				9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */,
+				9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		9A5DE2AC1EA55DC500C90F62 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */,
+				9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		9A5DE2B51EA55DC500C90F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2B61EA55DC500C90F62 /* Info-iOS.plist */,
+				9A5DE2BA1EA55DC500C90F62 /* MBDebugPanel.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5DE3331EA55DEC00C90F62 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A10FA361EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer */,
+				9A5DE3341EA55DEC00C90F62 /* MBDebugPanelTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9A5DE3341EA55DEC00C90F62 /* MBDebugPanelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE3351EA55DEC00C90F62 /* InfoPlist.strings */,
+				9A5DE3371EA55DEC00C90F62 /* MBDebugPanelSimpleComponentTests.m */,
+				9A5DE3381EA55DEC00C90F62 /* MBDebugPanelTests-Info.plist */,
+				9A5DE3391EA55DEC00C90F62 /* MBDebugPanelTests-Prefix.pch */,
+				9A5DE33A1EA55DEC00C90F62 /* MBDebugPanelTests.m */,
+				9A5DE33B1EA55DEC00C90F62 /* Supporting Files */,
+			);
+			path = MBDebugPanelTests;
+			sourceTree = "<group>";
+		};
+		9A5DE33B1EA55DEC00C90F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE33C1EA55DEC00C90F62 /* Info-Tests-iOS.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FDCFACE418A49E6800E4AD74 = {
 			isa = PBXGroup;
 			children = (
-				FDCFAD0418A49EFF00E4AD74 /* Assets */,
-				FDCFAD0518A49EFF00E4AD74 /* Classes */,
-				FDCFACF818A49E9200E4AD74 /* MBDebugPanelTests */,
-				FD3CB36118AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */,
+				9A5DE2981EA55DC500C90F62 /* Sources */,
+				9A5DE3331EA55DEC00C90F62 /* Tests */,
 				FDCFACF118A49E9200E4AD74 /* Frameworks */,
 				FDCFACF018A49E9200E4AD74 /* Products */,
-				E481CC9963BB6941AA658161 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +327,8 @@
 			children = (
 				FDCFACEF18A49E9200E4AD74 /* MBDebugPanelTests.xctest */,
 				FD3CB35C18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer.app */,
+				9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */,
+				9AB6E6931EA5574F002DB509 /* MBDebugPanel iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,102 +336,74 @@
 		FDCFACF118A49E9200E4AD74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDCFACF218A49E9200E4AD74 /* XCTest.framework */,
-				FDCFACF418A49E9200E4AD74 /* Foundation.framework */,
-				FDCFACF618A49E9200E4AD74 /* UIKit.framework */,
+				9A5DE3C71EA55EF400C90F62 /* Foundation.framework */,
+				9A5DE3C51EA55EED00C90F62 /* UIKit.framework */,
+				9A5DE3C31EA55EE400C90F62 /* XCTest.framework */,
 				FD3CB35E18AC656F00FD9427 /* CoreGraphics.framework */,
-				DF5E80756DEB4D899888424F /* libPods-TestPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDCFACF818A49E9200E4AD74 /* MBDebugPanelTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD8915DE18AB38EE00115491 /* MBDebugPanelSimpleComponentTests.m */,
-				FDCFACFE18A49E9200E4AD74 /* MBDebugPanelTests.m */,
-				FDCFACF918A49E9200E4AD74 /* Supporting Files */,
-			);
-			path = MBDebugPanelTests;
-			sourceTree = "<group>";
-		};
-		FDCFACF918A49E9200E4AD74 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FDCFACFA18A49E9200E4AD74 /* MBDebugPanelTests-Info.plist */,
-				FDCFACFB18A49E9200E4AD74 /* InfoPlist.strings */,
-				FDCFAD0018A49E9200E4AD74 /* MBDebugPanelTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FDCFAD0418A49EFF00E4AD74 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				FDCFAD6D18AAE30000E4AD74 /* componentCells */,
-			);
-			name = Assets;
-			path = ../Assets;
-			sourceTree = "<group>";
-		};
-		FDCFAD0518A49EFF00E4AD74 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FDCFAD0618A49EFF00E4AD74 /* ios */,
-			);
-			name = Classes;
-			path = ../Classes;
-			sourceTree = "<group>";
-		};
-		FDCFAD0618A49EFF00E4AD74 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				FDCFAD6918AAE1AC00E4AD74 /* components */,
-				FDCFAD5318A95F1F00E4AD74 /* private */,
-				FDCFAD5018A4A0BD00E4AD74 /* MBDebugPanel.h */,
-				FDCFAD5118A4A0BD00E4AD74 /* MBDebugPanel.m */,
-				FDCFAD5D18A974BD00E4AD74 /* MBDebugPanelComponent.h */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		FDCFAD5318A95F1F00E4AD74 /* private */ = {
-			isa = PBXGroup;
-			children = (
-				FD8915DD18AB31D100115491 /* MBDebugPanel_Private.h */,
-				FD89160A18AC248200115491 /* MBDebugPanelSimpleComponent_Protected.h */,
-			);
-			path = private;
-			sourceTree = "<group>";
-		};
-		FDCFAD6918AAE1AC00E4AD74 /* components */ = {
-			isa = PBXGroup;
-			children = (
-				FD89160618AC234D00115491 /* MBDebugPanelSimpleComponent.h */,
-				FD89160718AC234D00115491 /* MBDebugPanelSimpleComponent.m */,
-				FDCFAD6A18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.h */,
-				FDCFAD6B18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.m */,
-				FDCFAD7218AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.h */,
-				FDCFAD7318AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.m */,
-				3C18E3F81A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.h */,
-				3C18E3F91A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m */,
-			);
-			path = components;
-			sourceTree = "<group>";
-		};
-		FDCFAD6D18AAE30000E4AD74 /* componentCells */ = {
-			isa = PBXGroup;
-			children = (
-				FDCFAD7018AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib */,
-				FDCFAD6E18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib */,
-				3C18E3FB1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib */,
-			);
-			path = componentCells;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9AB6E6881EA5574F002DB509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DE2CA1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h in Headers */,
+				9A5DE2D31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h in Headers */,
+				9A5DE2EE1EA55DC500C90F62 /* MBDebugPanel.h in Headers */,
+				9A5DE2DC1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h in Headers */,
+				9A5DE2FF1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h in Headers */,
+				9A5DE3641EA55DEC00C90F62 /* MBDebugPanelTests-Prefix.pch in Headers */,
+				9A5DE2FB1EA55DC500C90F62 /* MBDebugPanel_Private.h in Headers */,
+				9A5DE2E51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h in Headers */,
+				9A5DE32F1EA55DC500C90F62 /* MBDebugPanel.h in Headers */,
+				9A5DE2F71EA55DC500C90F62 /* MBDebugPanelComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9AB6E68A1EA5574F002DB509 /* MBDebugPanel iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB6E6A61EA5574F002DB509 /* Build configuration list for PBXNativeTarget "MBDebugPanel iOS" */;
+			buildPhases = (
+				9AB6E6861EA5574F002DB509 /* Sources */,
+				9AB6E6871EA5574F002DB509 /* Frameworks */,
+				9AB6E6881EA5574F002DB509 /* Headers */,
+				9AB6E6891EA5574F002DB509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MBDebugPanel iOS";
+			productName = "MBDebugPanel iOS";
+			productReference = 9AB6E68B1EA5574F002DB509 /* MBDebugPanel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AB6E6921EA5574F002DB509 /* MBDebugPanel iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB6E6A81EA5574F002DB509 /* Build configuration list for PBXNativeTarget "MBDebugPanel iOSTests" */;
+			buildPhases = (
+				9AB6E68F1EA5574F002DB509 /* Sources */,
+				9AB6E6901EA5574F002DB509 /* Frameworks */,
+				9AB6E6911EA5574F002DB509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB6E6961EA5574F002DB509 /* PBXTargetDependency */,
+				9AB6E6981EA5574F002DB509 /* PBXTargetDependency */,
+			);
+			name = "MBDebugPanel iOSTests";
+			productName = "MBDebugPanel iOSTests";
+			productReference = 9AB6E6931EA5574F002DB509 /* MBDebugPanel iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3CB38118AC656F00FD9427 /* Build configuration list for PBXNativeTarget "MBDebugPanelTestsApplicationContainer" */;
@@ -257,10 +411,12 @@
 				FD3CB35818AC656F00FD9427 /* Sources */,
 				FD3CB35918AC656F00FD9427 /* Frameworks */,
 				FD3CB35A18AC656F00FD9427 /* Resources */,
+				9AB6E6A71EA5574F002DB509 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9AB6E69F1EA5574F002DB509 /* PBXTargetDependency */,
 			);
 			name = MBDebugPanelTestsApplicationContainer;
 			productName = MBDebugPanelTestsApplicationContainer;
@@ -271,15 +427,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDCFAD0118A49E9200E4AD74 /* Build configuration list for PBXNativeTarget "MBDebugPanelTests" */;
 			buildPhases = (
-				83B0E259719040099D3AD005 /* Check Pods Manifest.lock */,
 				FDCFACEB18A49E9200E4AD74 /* Sources */,
 				FDCFACEC18A49E9200E4AD74 /* Frameworks */,
 				FDCFACED18A49E9200E4AD74 /* Resources */,
-				778792C1E384449EB8704ABD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9A5DE3C21EA55E4400C90F62 /* PBXTargetDependency */,
 			);
 			name = MBDebugPanelTests;
 			productName = MBDebugPanelTests;
@@ -292,9 +447,25 @@
 		FDCFACE518A49E6800E4AD74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
 				TargetAttributes = {
+					9AB6E68A1EA5574F002DB509 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Manual;
+					};
+					9AB6E6921EA5574F002DB509 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = WP7NQVPB66;
+						ProvisioningStyle = Automatic;
+					};
+					FD3CB35B18AC656F00FD9427 = {
+						DevelopmentTeam = WP7NQVPB66;
+						ProvisioningStyle = Automatic;
+					};
 					FDCFACEE18A49E9200E4AD74 = {
+						DevelopmentTeam = WP7NQVPB66;
+						ProvisioningStyle = Automatic;
 						TestTargetID = FD3CB35B18AC656F00FD9427;
 					};
 				};
@@ -313,19 +484,35 @@
 			targets = (
 				FDCFACEE18A49E9200E4AD74 /* MBDebugPanelTests */,
 				FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */,
+				9AB6E68A1EA5574F002DB509 /* MBDebugPanel iOS */,
+				9AB6E6921EA5574F002DB509 /* MBDebugPanel iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9AB6E6891EA5574F002DB509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DE2C11EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */,
+				9A5DE2C61EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */,
+				9A5DE2BC1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB6E6911EA5574F002DB509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DE34F1EA55DEC00C90F62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD3CB35A18AC656F00FD9427 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3CB38B18AC6B2400FD9427 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */,
-				FD3CB38C18AC6B2400FD9427 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */,
-				FD3CB36618AC656F00FD9427 /* InfoPlist.strings in Resources */,
-				FD3CB36E18AC656F00FD9427 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,55 +520,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCFAD7118AAE7AD00E4AD74 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */,
-				3C18E3FC1A2F8AC90000CA75 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */,
-				FDCFACFD18A49E9200E4AD74 /* InfoPlist.strings in Resources */,
-				FDCFAD6F18AAE32200E4AD74 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */,
+				9A5DE2C01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponentCell.xib in Resources */,
+				9A10FA411EA5633500D2B095 /* Images.xcassets in Resources */,
+				9A10FA401EA5633500D2B095 /* InfoPlist.strings in Resources */,
+				9A10FA441EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist in Resources */,
+				9A5DE2C51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */,
+				9A5DE2BB1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		778792C1E384449EB8704ABD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TestPods/Pods-TestPods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83B0E259719040099D3AD005 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
+		9AB6E6861EA5574F002DB509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DE2CF1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */,
+				9A5DE2EA1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */,
+				9A5DE2F31EA55DC500C90F62 /* MBDebugPanel.m in Sources */,
+				9A5DE2E11EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */,
+				9A5DE2D81EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB6E68F1EA5574F002DB509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DE3581EA55DEC00C90F62 /* MBDebugPanelSimpleComponentTests.m in Sources */,
+				9A5DE36E1EA55DEC00C90F62 /* MBDebugPanelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD3CB35818AC656F00FD9427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3CB36818AC656F00FD9427 /* main.m in Sources */,
-				FD3CB36C18AC656F00FD9427 /* MBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,31 +564,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCFACFF18A49E9200E4AD74 /* MBDebugPanelTests.m in Sources */,
-				FD89160B18AC3E1300115491 /* MBDebugPanelSimpleComponent.m in Sources */,
-				FDCFAD5218A4A0BD00E4AD74 /* MBDebugPanel.m in Sources */,
-				FD8915DF18AB38EE00115491 /* MBDebugPanelSimpleComponentTests.m in Sources */,
-				FDCFAD7418AAE83100E4AD74 /* MBDebugPanelSimpleButtonComponent.m in Sources */,
-				3C18E3FA1A2F87520000CA75 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */,
-				FDCFAD6C18AAE1C200E4AD74 /* MBDebugPanelSimpleSwitchComponent.m in Sources */,
+				9A5DE2F21EA55DC500C90F62 /* MBDebugPanel.m in Sources */,
+				9A5DE2E01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */,
+				9A10FA431EA5633500D2B095 /* MBAppDelegate.m in Sources */,
+				9A5DE2E91EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */,
+				9A5DE2CE1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */,
+				9A10FA421EA5633500D2B095 /* main.m in Sources */,
+				9A5DE2D71EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9A5DE3C21EA55E4400C90F62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */;
+			targetProxy = 9A5DE3C11EA55E4400C90F62 /* PBXContainerItemProxy */;
+		};
+		9AB6E6961EA5574F002DB509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB6E68A1EA5574F002DB509 /* MBDebugPanel iOS */;
+			targetProxy = 9AB6E6951EA5574F002DB509 /* PBXContainerItemProxy */;
+		};
+		9AB6E6981EA5574F002DB509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */;
+			targetProxy = 9AB6E6971EA5574F002DB509 /* PBXContainerItemProxy */;
+		};
+		9AB6E69F1EA5574F002DB509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB6E68A1EA5574F002DB509 /* MBDebugPanel iOS */;
+			targetProxy = 9AB6E69E1EA5574F002DB509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		FD3CB36418AC656F00FD9427 /* InfoPlist.strings */ = {
+		9A10FA371EA5633500D2B095 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD3CB36518AC656F00FD9427 /* en */,
+				9A10FA381EA5633500D2B095 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FDCFACFB18A49E9200E4AD74 /* InfoPlist.strings */ = {
+		9A5DE3351EA55DEC00C90F62 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDCFACFC18A49E9200E4AD74 /* en */,
+				9A5DE3361EA55DEC00C90F62 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -421,11 +619,246 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9AB6E6A21EA5574F002DB509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindbodyonline.MBDebugPanel;
+				PRODUCT_NAME = MBDebugPanel;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AB6E6A31EA5574F002DB509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindbodyonline.MBDebugPanel;
+				PRODUCT_NAME = MBDebugPanel;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AB6E6A41EA5574F002DB509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WP7NQVPB66;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MBDebugPanel iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindbodyonline.MBDebugPanel-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9AB6E6A51EA5574F002DB509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WP7NQVPB66;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "MBDebugPanel iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindbodyonline.MBDebugPanel-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		FD3CB38218AC656F00FD9427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -442,6 +875,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WP7NQVPB66;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -462,10 +896,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanelTestsApplicationContainer/MBDebugPanelTestsApplicationContainer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Classes/MBDebugPanelTestsApplicationContainer/MBDebugPanelTestsApplicationContainer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindbodyonline.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -475,7 +912,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -492,6 +928,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = WP7NQVPB66;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,9 +943,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanelTestsApplicationContainer/MBDebugPanelTestsApplicationContainer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Classes/MBDebugPanelTestsApplicationContainer/MBDebugPanelTestsApplicationContainer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mindbodyonline.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -518,22 +958,59 @@
 		FDCFACE918A49E6900E4AD74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		FDCFACEA18A49E6900E4AD74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
 		FDCFAD0218A49E9200E4AD74 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0543474BB18245234E20518B /* Pods-TestPods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBDebugPanelTestsApplicationContainer.app/MBDebugPanelTestsApplicationContainer";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -546,7 +1023,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WP7NQVPB66;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -569,22 +1048,20 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MBDebugPanelTests/MBDebugPanelTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBDebugPanelTestsApplicationContainer.app/MBDebugPanelTestsApplicationContainer";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		FDCFAD0318A49E9200E4AD74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4442BCB4383AF8E78C055FBE /* Pods-TestPods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MBDebugPanelTestsApplicationContainer.app/MBDebugPanelTestsApplicationContainer";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -597,7 +1074,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = WP7NQVPB66;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -614,10 +1093,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "MBDebugPanelTests/MBDebugPanelTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBDebugPanelTestsApplicationContainer.app/MBDebugPanelTestsApplicationContainer";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -626,6 +1106,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9AB6E6A61EA5574F002DB509 /* Build configuration list for PBXNativeTarget "MBDebugPanel iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB6E6A21EA5574F002DB509 /* Debug */,
+				9AB6E6A31EA5574F002DB509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AB6E6A81EA5574F002DB509 /* Build configuration list for PBXNativeTarget "MBDebugPanel iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB6E6A41EA5574F002DB509 /* Debug */,
+				9AB6E6A51EA5574F002DB509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FD3CB38118AC656F00FD9427 /* Build configuration list for PBXNativeTarget "MBDebugPanelTestsApplicationContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

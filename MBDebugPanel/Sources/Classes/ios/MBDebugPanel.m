@@ -78,6 +78,20 @@
     return [MBDebugPanel.sharedPanel_ isPresented];
 }
 
++ (void)presentViewController:(UIViewController *)viewControllerToPresent
+                     animated:(BOOL)flag
+                   completion:(void (^ __nullable)(void))completion {
+    
+    [[MBDebugPanel.sharedPanel_ wrappingViewController] presentViewController:viewControllerToPresent
+                                                                     animated:flag
+                                                                   completion:completion];
+}
+
++ (void)setTitle:(NSString*)title
+{
+    [MBDebugPanel.sharedPanel_ setTitle:title];
+}
+
 #pragma mark UITableViewDataSource/Delegate
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

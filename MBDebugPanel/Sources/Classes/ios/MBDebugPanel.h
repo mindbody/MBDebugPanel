@@ -82,4 +82,15 @@
  */
 +(BOOL)isPresented;
 
+/*
+ Present a view controller from the DebugPanel's parent viewcontroller
+ */
++ (void)presentViewController:(UIViewController *)viewControllerToPresent
+                     animated:(BOOL)flag
+                   completion:(void (^)(void))completion;
+
+/*
+ Expose the ability to set the DebugPanel's modal title
+ */
++ (void)setTitle:(NSString*)title;
 @end
