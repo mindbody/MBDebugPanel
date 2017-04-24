@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                         
                        It's like the Konami code, but for your app.
                        DESC
-  s.homepage         = "http://github.com/mindbody/MBDebugPanel.git"
+  s.homepage         = "https://github.com/mindbody/MBDebugPanel.git"
   s.license          = 'MIT'
   s.author           = { "Matthew Holden" => "matthew.holden@mindbodyonline.com" }
   s.source           = { :git => "https://github.com/mindbody/MBDebugPanel.git", :tag => s.version.to_s }
@@ -16,8 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/ios/*.{h,m}', 'Classes/ios/{private,components}/*.{h,m}'
-  s.resources = 'Assets/componentCells/*.xib'
-
-  s.private_header_files = 'Classes/ios/private/*.h'
+  s.source_files = 'MBDebugPanel/Sources/Classes/**/*.{h,m}'
+  s.resources = 'MBDebugPanel/Sources/Assets/componentCells/*.xib'
+  s.private_header_files = 'MBDebugPanel/Sources/Classes/ios/private/*.h'
 end
