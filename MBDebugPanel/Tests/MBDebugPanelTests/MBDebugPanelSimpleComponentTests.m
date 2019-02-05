@@ -73,8 +73,8 @@
 
     // Get all the cell instances in the table
     NSMutableSet *cellInstances = [NSMutableSet setWithArray:[tableView visibleCells]];
-    int cellsBeforeReloading = [cellInstances count];
-    int cellsAfterReloading;
+    NSUInteger cellsBeforeReloading = [cellInstances count];
+    NSUInteger cellsAfterReloading;
 
     // Reload the table
     [tableView reloadData];
@@ -84,7 +84,7 @@
     cellsAfterReloading = [cellInstances count];
 
     // Object count should remain the same (cells should be reused)
-    XCTAssertEqualWithAccuracy(cellsAfterReloading, cellsBeforeReloading, 1, @"No more than 1 extra cell instance should have been created.  (Had %d before scrolling, and %d after scrolling)", cellsBeforeReloading, cellsAfterReloading);
+    XCTAssertEqualWithAccuracy(cellsAfterReloading, cellsBeforeReloading, 1, @"No more than 1 extra cell instance should have been created.  (Had %lul before scrolling, and %lul after scrolling)", cellsBeforeReloading, cellsAfterReloading);
 
 }
 

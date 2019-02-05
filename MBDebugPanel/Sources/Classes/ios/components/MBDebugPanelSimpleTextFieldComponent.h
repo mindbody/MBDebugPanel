@@ -11,7 +11,7 @@
 @interface MBDebugPanelSimpleTextFieldComponent : MBDebugPanelSimpleComponent <MBDebugPanelComponent, UITextFieldDelegate>
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, copy, readonly) NSString *placeholderText;
-@property (nonatomic, copy, readonly) NSString *(^initialText)();
+@property (nonatomic, copy, readonly) NSString *(^initialText)(void);
 @property (nonatomic, copy, readonly) void(^onEditingDidEnd)(NSString *text);
 
 /** Create a new text field component
