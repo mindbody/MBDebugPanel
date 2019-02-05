@@ -38,6 +38,7 @@
 @implementation MBDebugPanelSimpleSwitchComponentCell
 -(void)prepareForReuse
 {
+    [super prepareForReuse];
     [self.theSwitch removeTarget:nil
                           action:NULL
                 forControlEvents:UIControlEventValueChanged];

@@ -19,19 +19,14 @@
 		9A5DE2C51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
 		9A5DE2C61EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DE29D1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponentCell.xib */; };
 		9A5DE2CA1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A5DE2CE1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */; };
 		9A5DE2CF1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */; };
 		9A5DE2D31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A5DE2D71EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */; };
 		9A5DE2D81EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */; };
 		9A5DE2DC1EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A5DE2E01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */; };
 		9A5DE2E11EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */; };
 		9A5DE2E51EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A5DE2E91EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */; };
 		9A5DE2EA1EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */; };
 		9A5DE2EE1EA55DC500C90F62 /* MBDebugPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A5DE2F21EA55DC500C90F62 /* MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */; };
 		9A5DE2F31EA55DC500C90F62 /* MBDebugPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */; };
 		9A5DE2F71EA55DC500C90F62 /* MBDebugPanelComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A5DE2FB1EA55DC500C90F62 /* MBDebugPanel_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */; };
@@ -189,16 +184,8 @@
 				9A10FA3C1EA5633500D2B095 /* MBAppDelegate.m */,
 				9A10FA3D1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Info.plist */,
 				9A10FA3E1EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer-Prefix.pch */,
-				9A10FA3F1EA5633500D2B095 /* Supporting Files */,
 			);
 			path = MBDebugPanelTestsApplicationContainer;
-			sourceTree = "<group>";
-		};
-		9A10FA3F1EA5633500D2B095 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9A5DE2981EA55DC500C90F62 /* Sources */ = {
@@ -448,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					9AB6E68A1EA5574F002DB509 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -482,10 +469,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDCFACEE18A49E9200E4AD74 /* MBDebugPanelTests */,
-				FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */,
 				9AB6E68A1EA5574F002DB509 /* MBDebugPanel iOS */,
 				9AB6E6921EA5574F002DB509 /* MBDebugPanel iOSTests */,
+				FDCFACEE18A49E9200E4AD74 /* MBDebugPanelTests */,
+				FD3CB35B18AC656F00FD9427 /* MBDebugPanelTestsApplicationContainer */,
 			);
 		};
 /* End PBXProject section */
@@ -564,13 +551,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5DE2F21EA55DC500C90F62 /* MBDebugPanel.m in Sources */,
-				9A5DE2E01EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m in Sources */,
 				9A10FA431EA5633500D2B095 /* MBAppDelegate.m in Sources */,
-				9A5DE2E91EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m in Sources */,
-				9A5DE2CE1EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m in Sources */,
 				9A10FA421EA5633500D2B095 /* main.m in Sources */,
-				9A5DE2D71EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +774,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanel iOSTests/Info.plist";
+				INFOPLIST_FILE = "Tests/MBDebugPanelTests/Supporting Files/Info-Tests-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -842,7 +824,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanel iOSTests/Info.plist";
+				INFOPLIST_FILE = "Tests/MBDebugPanelTests/Supporting Files/Info-Tests-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -959,18 +941,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -986,17 +977,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1035,7 +1035,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBDebugPanelTests/MBDebugPanelTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/MBDebugPanelTests/MBDebugPanelTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1047,7 +1047,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanelTests/MBDebugPanelTests-Info.plist";
+				INFOPLIST_FILE = "Tests/MBDebugPanelTests/MBDebugPanelTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1085,14 +1085,14 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBDebugPanelTests/MBDebugPanelTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/MBDebugPanelTests/MBDebugPanelTests-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MBDebugPanelTests/MBDebugPanelTests-Info.plist";
+				INFOPLIST_FILE = "Tests/MBDebugPanelTests/MBDebugPanelTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -37,6 +37,7 @@
 @implementation MBDebugPanelSimpleButtonComponentCell
 -(void)prepareForReuse
 {
+    [super prepareForReuse];
     [self.button removeTarget:nil
                        action:NULL
              forControlEvents:UIControlEventTouchUpInside];

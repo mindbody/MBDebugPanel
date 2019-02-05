@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MBDebugPanelDemo/MBDebugPanelDemo.xcodeproj">
+      location = "group:MBDebugPanel/MBDebugPanel.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MBDebugPanel/MBDebugPanel.xcodeproj">
+      location = "group:MBDebugPanelDemo/MBDebugPanelDemo.xcodeproj">
    </FileRef>
 </Workspace>

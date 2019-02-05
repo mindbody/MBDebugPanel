@@ -17,6 +17,7 @@
 @implementation MBDebugPanelSimpleTextFieldComponentCell
 -(void)prepareForReuse
 {
+    [super prepareForReuse];
     self.textField.delegate = nil;
 }
 @end
@@ -24,7 +25,7 @@
 @interface MBDebugPanelSimpleTextFieldComponent()
 @property (nonatomic, copy, readwrite) NSString *title;
 @property (nonatomic, copy, readwrite) NSString *placeholderText;
-@property (nonatomic, copy, readwrite) NSString *(^initialText)();
+@property (nonatomic, copy, readwrite) NSString *(^initialText)(void);
 @property (nonatomic, copy, readwrite) void(^onEditingDidEnd)(NSString *text);
 @end
 

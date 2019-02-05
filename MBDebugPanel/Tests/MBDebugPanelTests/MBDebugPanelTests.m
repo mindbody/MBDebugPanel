@@ -59,7 +59,8 @@ static void(^dummySwitchHanlder)(void) = ^{
 -(id<MBDebugPanelComponent>)makeSwitch
 {
     return [[MBDebugPanelSimpleSwitchComponent alloc] initWithTitle:@"switch"
-                                                     onSwitchChanged:nil];
+                                                       initialValue:true
+                                                    onSwitchChanged:nil];
 }
 
 #pragma mark tests
@@ -100,7 +101,7 @@ static void(^dummySwitchHanlder)(void) = ^{
 -(void)testOnlyOneSectionSupported /*right now*/
 {
     id<UITableViewDataSource, UITableViewDelegate> panel = [MBDebugPanel sharedPanel_];
-    XCTAssert([panel numberOfSectionsInTableView:nil] == 1, @"Number of sections is hard-coded to 1.");
+    XCTAssert([panel numberOfSectionsInTableView:[UITableView new]] == 1, @"Number of sections is hard-coded to 1.");
 }
 
 -(void)testTableRowCountIsSameAsComponentCount
@@ -110,7 +111,7 @@ static void(^dummySwitchHanlder)(void) = ^{
         [MBDebugPanel addComponent:[self makeButton]];
 
     id<UITableViewDataSource, UITableViewDelegate> panel = [MBDebugPanel sharedPanel_];
-    XCTAssert([panel tableView:nil numberOfRowsInSection:0] == kCount, @"Row count should be equal to number of components");
+    XCTAssert([panel tableView:[UITableView new] numberOfRowsInSection:0] == kCount, @"Row count should be equal to number of components");
 }
 
 -(void)testReloadsTableDataWhenShown
@@ -131,8 +132,8 @@ static void(^dummySwitchHanlder)(void) = ^{
     // We're expecting that -[UITableView reloadData] should have been called during the 'show' method
     UITableViewCell *cell2 = [MBDebugPanel.sharedPanel_.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 
-    int tableRowCount = [MBDebugPanel.sharedPanel_.tableView numberOfRowsInSection:0];
-    XCTAssert(tableRowCount == 1, @"There should only be 1 row displayed in the table, instead saw %d", tableRowCount);
+    NSInteger tableRowCount = [MBDebugPanel.sharedPanel_.tableView numberOfRowsInSection:0];
+    XCTAssert(tableRowCount == 1, @"There should only be 1 row displayed in the table, instead saw %ld", (long)tableRowCount);
     XCTAssert(cell1 != cell2, @"The displayed cell should be re-rendered and now of a different type, since it was from a different component.  Renderered cell was instance of %@", NSStringFromClass(cell2.class));
 }
 
