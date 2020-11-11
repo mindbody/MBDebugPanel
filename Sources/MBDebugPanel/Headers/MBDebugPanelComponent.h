@@ -26,7 +26,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  Custom components need only implement the two methods provided by this protocol. 
