@@ -93,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B2A4CC7255C2C7F00DA9688 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		9A10FA381EA5633500D2B095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A10FA391EA5633500D2B095 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A10FA3A1EA5633500D2B095 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -174,6 +175,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2A4CC3255C2BD100DA9688 /* MBDebugPanel */ = {
+			isa = PBXGroup;
+			children = (
+				1B2A4CCE255C2F9800DA9688 /* Headers */,
+				9A5DE2991EA55DC500C90F62 /* Assets */,
+				9A5DE29E1EA55DC500C90F62 /* Classes */,
+				9A5DE2B51EA55DC500C90F62 /* SupportingFiles */,
+			);
+			path = MBDebugPanel;
+			sourceTree = "<group>";
+		};
+		1B2A4CCE255C2F9800DA9688 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */,
+				9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */,
+				9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */,
+				9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */,
+				9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */,
+				9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */,
+				9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */,
+				9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		9A10FA361EA5633500D2B095 /* MBDebugPanelTestsApplicationContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,9 +218,7 @@
 		9A5DE2981EA55DC500C90F62 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9A5DE2991EA55DC500C90F62 /* Assets */,
-				9A5DE29E1EA55DC500C90F62 /* Classes */,
-				9A5DE2B51EA55DC500C90F62 /* Supporting Files */,
+				1B2A4CC3255C2BD100DA9688 /* MBDebugPanel */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -228,10 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				9A5DE2A01EA55DC500C90F62 /* components */,
-				9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */,
 				9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */,
-				9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */,
-				9A5DE2AC1EA55DC500C90F62 /* private */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -239,34 +261,21 @@
 		9A5DE2A01EA55DC500C90F62 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */,
 				9A5DE2A21EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.m */,
-				9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */,
 				9A5DE2A41EA55DC500C90F62 /* MBDebugPanelSimpleComponent.m */,
-				9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */,
 				9A5DE2A61EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.m */,
-				9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */,
 				9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */,
 			);
 			path = components;
 			sourceTree = "<group>";
 		};
-		9A5DE2AC1EA55DC500C90F62 /* private */ = {
-			isa = PBXGroup;
-			children = (
-				9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */,
-				9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */,
-			);
-			path = private;
-			sourceTree = "<group>";
-		};
-		9A5DE2B51EA55DC500C90F62 /* Supporting Files */ = {
+		9A5DE2B51EA55DC500C90F62 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				9A5DE2B61EA55DC500C90F62 /* Info-iOS.plist */,
 				9A5DE2BA1EA55DC500C90F62 /* MBDebugPanel.h */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		9A5DE3331EA55DEC00C90F62 /* Tests */ = {
@@ -302,6 +311,7 @@
 		FDCFACE418A49E6800E4AD74 = {
 			isa = PBXGroup;
 			children = (
+				1B2A4CC7255C2C7F00DA9688 /* Package.swift */,
 				9A5DE2981EA55DC500C90F62 /* Sources */,
 				9A5DE3331EA55DEC00C90F62 /* Tests */,
 				FDCFACF118A49E9200E4AD74 /* Frameworks */,
@@ -462,6 +472,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = FDCFACE418A49E6800E4AD74;
@@ -650,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/MBDebugPanel/SupportingFiles/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -713,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/MBDebugPanel/SupportingFiles/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

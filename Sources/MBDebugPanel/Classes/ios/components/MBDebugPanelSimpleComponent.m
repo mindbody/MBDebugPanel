@@ -27,6 +27,7 @@
 //
 
 #import "MBDebugPanel.h"
+#import "MBDebugPanel_Private.h"
 #import "MBDebugPanelSimpleComponent.h"
 #import "MBDebugPanelSimpleButtonComponent.h"
 
@@ -68,7 +69,7 @@
 
 -(UINib*)cellNib_
 {
-    return [UINib nibWithNibName:[self cellClassName] bundle:[NSBundle bundleForClass:[MBDebugPanel class]]];
+    return [UINib nibWithNibName:[self cellClassName] bundle:[MBDebugPanel bundle]];
 }
 
 -(void)bindToReusableCell:(UITableViewCell*)cell
