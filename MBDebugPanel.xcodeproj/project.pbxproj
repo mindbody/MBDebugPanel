@@ -254,7 +254,6 @@
 			children = (
 				9A5DE2A01EA55DC500C90F62 /* components */,
 				9A5DE2AA1EA55DC500C90F62 /* MBDebugPanel.m */,
-				9A5DE2AC1EA55DC500C90F62 /* private */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -268,13 +267,6 @@
 				9A5DE2A81EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.m */,
 			);
 			path = components;
-			sourceTree = "<group>";
-		};
-		9A5DE2AC1EA55DC500C90F62 /* private */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = private;
 			sourceTree = "<group>";
 		};
 		9A5DE2B51EA55DC500C90F62 /* SupportingFiles */ = {
