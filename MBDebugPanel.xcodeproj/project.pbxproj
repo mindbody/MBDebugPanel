@@ -190,9 +190,11 @@
 			isa = PBXGroup;
 			children = (
 				9A5DE2A91EA55DC500C90F62 /* MBDebugPanel.h */,
+				9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */,
 				9A5DE2AB1EA55DC500C90F62 /* MBDebugPanelComponent.h */,
 				9A5DE2A11EA55DC500C90F62 /* MBDebugPanelSimpleButtonComponent.h */,
 				9A5DE2A31EA55DC500C90F62 /* MBDebugPanelSimpleComponent.h */,
+				9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */,
 				9A5DE2A51EA55DC500C90F62 /* MBDebugPanelSimpleSwitchComponent.h */,
 				9A5DE2A71EA55DC500C90F62 /* MBDebugPanelSimpleTextFieldComponent.h */,
 			);
@@ -271,8 +273,6 @@
 		9A5DE2AC1EA55DC500C90F62 /* private */ = {
 			isa = PBXGroup;
 			children = (
-				9A5DE2AD1EA55DC500C90F62 /* MBDebugPanel_Private.h */,
-				9A5DE2AE1EA55DC500C90F62 /* MBDebugPanelSimpleComponent_Protected.h */,
 			);
 			path = private;
 			sourceTree = "<group>";
