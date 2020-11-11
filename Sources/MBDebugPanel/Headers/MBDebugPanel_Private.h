@@ -33,4 +33,5 @@
 @property (nonatomic, getter = isPresented) BOOL presented;
 @property (nonatomic) UIViewController *wrappingViewController;
 +(MBDebugPanel*)sharedPanel_;
++ (NSBundle *)bundle;
 @end

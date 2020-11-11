@@ -41,6 +41,15 @@
     return inst;
 }
 
++ (NSBundle *)bundle
+{
+#ifdef SWIFTPM_MODULE_BUNDLE
+    return SWIFTPM_MODULE_BUNDLE;
+#else
+    return [NSBundle bundleForClass:self];
+#endif
+}
+
 +(void)addComponent:(id<MBDebugPanelComponent>)component
 {
     [self.sharedPanel_.components addObject:component];
