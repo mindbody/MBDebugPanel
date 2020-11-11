@@ -24,3 +24,6 @@ Pods
 
 #Carthage
 Carthage
+
+# SwiftPM
+.build
